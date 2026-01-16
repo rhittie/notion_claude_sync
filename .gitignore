@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains secrets)
+.env
+
+# Sync state file
+.notion-sync.json
+
+# Logs
+*.log
+notion-sync.log
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/

@@ -1,0 +1,16 @@
+{
+  "name": "notion-sync",
+  "version": "3.0.0",
+  "description": "Sync Claude Code roadmap features to Notion Kanban boards",
+  "main": "sync-to-notion.js",
+  "scripts": {
+    "sync": "node sync-to-notion.js",
+    "setup-hooks": "node setup-git-hooks.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "dotenv": "^16.3.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
