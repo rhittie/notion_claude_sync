@@ -13,10 +13,13 @@
  * ONE-WAY SYNC: Claude Code is the source of truth
  */
 
-require('dotenv').config();
+const path = require('path');
+
+// Load .env from script's directory (not cwd)
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
 const { Client } = require('@notionhq/client');
 const fs = require('fs').promises;
-const path = require('path');
 const crypto = require('crypto');
 
 // Initialize Notion client
