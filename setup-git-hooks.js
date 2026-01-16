@@ -12,7 +12,7 @@ const hookContent = `#!/bin/sh
 # Auto-sync to Notion after commit
 cd "$(git rev-parse --show-toplevel)"
 echo "🔄 Syncing to Notion..." >> notion-sync.log
-node sync-to-notion.js >> notion-sync.log 2>&1
+node tools/notion-sync/sync-to-notion.js >> notion-sync.log 2>&1
 echo "✅ Sync complete at $(date)" >> notion-sync.log
 `;
 
