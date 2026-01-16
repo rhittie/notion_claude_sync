@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains secrets)
+.env
+
+# Local sync state
+.notion-sync.json
+
+# Logs
+*.log
